@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Deployment.Compression.Cab.Core", "Microsoft.Deployment.Compression.Cab\Microsoft.Deployment.Compression.Cab.Core.csproj", "{A28EB551-37C6-4069-AB4B-239AC93B51F7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Deployment.Compression.Core", "Microsoft.Deployment.Compression\Microsoft.Deployment.Compression.Core.csproj", "{9B54A1D5-FA95-4851-80B2-1C7D3A25552D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A28EB551-37C6-4069-AB4B-239AC93B51F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A28EB551-37C6-4069-AB4B-239AC93B51F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A28EB551-37C6-4069-AB4B-239AC93B51F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A28EB551-37C6-4069-AB4B-239AC93B51F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B54A1D5-FA95-4851-80B2-1C7D3A25552D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B54A1D5-FA95-4851-80B2-1C7D3A25552D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B54A1D5-FA95-4851-80B2-1C7D3A25552D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B54A1D5-FA95-4851-80B2-1C7D3A25552D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B1D9E85-028C-43D2-8CEC-0364D1967EA9}
+	EndGlobalSection
+EndGlobal
