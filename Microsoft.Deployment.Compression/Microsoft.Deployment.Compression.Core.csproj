@@ -5,8 +5,9 @@
     <RootNamespace>Microsoft.Deployment.Compression</RootNamespace>
     <AssemblyName>Microsoft.Deployment.Compression</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <PackageId>MSFTCompressionCab.Core</PackageId>
+    <PackageId>MSFTCompression.Core</PackageId>
     <Authors>Microsoft</Authors>
+    <Description>Core library for MSFTCompressionCab.Core.Cab</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 

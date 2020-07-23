@@ -5,9 +5,10 @@
     <RootNamespace>Microsoft.Deployment.Compression.Cab</RootNamespace>
     <AssemblyName>Microsoft.Deployment.Compression.Cab</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <PackageId>MSFTCompressionCab.Core.Cab</PackageId>
+    <PackageId>MSFTCompression.Core.Cab</PackageId>
     <Authors>Microsoft</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>This package contains Microsoft Dlls that make it easier to work with cabinet files (.cab) or some of their derivatives from .net code. It isn’t always easy to find these on their own. You can find some documentation to get started here: https://social.msdn.microsoft.com/Forums/en-US/1b6d3cbe-22ba-450b-b48f-b5d4a2644ae4/how-to-create-cab-files-in-c?forum=windowsmobiledev</Description>
     <PackageTags>cab, cabinet</PackageTags>
   </PropertyGroup>
 
@@ -22,7 +23,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MSFTCompressionCab.Core" Version="1.0.0" />
+    <PackageReference Include="MSFTCompression.Core" Version="1.0.0" />
     <ProjectReference Include="..\Microsoft.Deployment.Compression\Microsoft.Deployment.Compression.Core.csproj" />
   </ItemGroup>
 
