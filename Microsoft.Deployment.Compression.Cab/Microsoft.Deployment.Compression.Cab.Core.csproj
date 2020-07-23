@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Microsoft.Deployment.Compression.Cab</RootNamespace>
+    <AssemblyName>Microsoft.Deployment.Compression.Cab</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <PackageId>MSFTCompressionCab.Core.Cab</PackageId>
+    <Authors>Microsoft</Authors>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageTags>cab, cabinet</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MSFTCompressionCab.Core" Version="1.0.0" />
+    <ProjectReference Include="..\Microsoft.Deployment.Compression\Microsoft.Deployment.Compression.Core.csproj" />
+  </ItemGroup>
+
+</Project>

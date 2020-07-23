@@ -1,15 +1,13 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Microsoft.Deployment.Compression.Cab</RootNamespace>
-    <AssemblyName>Microsoft.Deployment.Compression.Cab</AssemblyName>
+    <RootNamespace>Microsoft.Deployment.Compression</RootNamespace>
+    <AssemblyName>Microsoft.Deployment.Compression</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>Microsoft</Authors>
     <PackageId>MSFTCompressionCab.Core</PackageId>
-    <PackageProjectUrl>https://github.com/daoluong/MSFTCompressionCab.Core</PackageProjectUrl>
-    <PackageTags>cab, cabinet</PackageTags>
+    <Authors>Microsoft</Authors>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

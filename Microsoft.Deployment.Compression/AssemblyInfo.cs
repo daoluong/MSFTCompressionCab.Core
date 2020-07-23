@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 using System.Security;
 using System.Security.Permissions;
 
-[assembly: AssemblyDescription("Managed libraries for cabinet archive packing and unpacking")]
+[assembly: AssemblyDescription("Abstract base libraries for archive packing and unpacking")]
 [assembly: CLSCompliant(true)]
 [assembly: ComVisible(false)]
 [assembly: AllowPartiallyTrustedCallers]
@@ -15,5 +15,5 @@ using System.Security.Permissions;
 [assembly: AssemblyProduct("Windows Installer XML Toolset")]
 [assembly: AssemblyConfiguration("")]
 [assembly: NeutralResourcesLanguage("en-US")]
-[assembly: AssemblyVersion("3.10.1.0")]
-[assembly: SecurityPermission(SecurityAction.RequestMinimum, Assertion = true, UnmanagedCode = true)]
+[assembly: AssemblyVersion("3.10.1.2213")]
+[assembly: SecurityPermission(SecurityAction.RequestMinimum, Unrestricted = true)]
