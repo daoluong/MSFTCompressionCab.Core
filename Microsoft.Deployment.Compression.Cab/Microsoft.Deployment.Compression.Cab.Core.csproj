@@ -1,30 +1,43 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Microsoft.Deployment.Compression.Cab</RootNamespace>
-    <AssemblyName>Microsoft.Deployment.Compression.Cab</AssemblyName>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <PackageId>MSFTCompression.Core.Cab</PackageId>
-    <Authors>Microsoft</Authors>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Description>This package contains Microsoft Dlls that make it easier to work with cabinet files (.cab) or some of their derivatives from .net code. It isn’t always easy to find these on their own. You can find some documentation to get started here: https://social.msdn.microsoft.com/Forums/en-US/1b6d3cbe-22ba-450b-b48f-b5d4a2644ae4/how-to-create-cab-files-in-c?forum=windowsmobiledev</Description>
-    <PackageTags>cab, cabinet</PackageTags>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <RootNamespace>Microsoft.Deployment.Compression.Cab</RootNamespace>
+        <AssemblyName>Microsoft.Deployment.Compression.Cab</AssemblyName>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <PackageId>MSFTCompression.Core.Cab</PackageId>
+        <Authors>Microsoft</Authors>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Description>This package contains Microsoft Dlls that make it easier to work with cabinet files (.cab) or some of their derivatives from .net code. It isn’t always easy to find these on their own. You can find some documentation to get started here: https://social.msdn.microsoft.com/Forums/en-US/1b6d3cbe-22ba-450b-b48f-b5d4a2644ae4/how-to-create-cab-files-in-c?forum=windowsmobiledev</Description>
+        <PackageTags>cab, cabinet</PackageTags>
+        <RepositoryUrl>https://github.com/daoluong/MSFTCompressionCab.Core.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <Version>1.0.1</Version>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <OutputPath></OutputPath>
-  </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <OutputPath></OutputPath>
+    </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <OutputPath></OutputPath>
-  </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <OutputPath></OutputPath>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="MSFTCompression.Core" Version="1.0.0" />
-    <ProjectReference Include="..\Microsoft.Deployment.Compression\Microsoft.Deployment.Compression.Core.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+      <Compile Remove="Microsoft.Tools.WindowsInstallerXml\**" />
+      <Compile Remove="Tools\**" />
+      <EmbeddedResource Remove="Microsoft.Tools.WindowsInstallerXml\**" />
+      <EmbeddedResource Remove="Tools\**" />
+      <None Remove="Microsoft.Tools.WindowsInstallerXml\**" />
+      <None Remove="Tools\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Microsoft.Deployment.Compression\Microsoft.Deployment.Compression.Core.csproj" />
+        <PackageReference Include="MSFTCompression.Core" Version="1.0.1" />
+    </ItemGroup>
 
 </Project>

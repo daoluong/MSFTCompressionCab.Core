@@ -1,24 +1,37 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Microsoft.Deployment.Compression</RootNamespace>
-    <AssemblyName>Microsoft.Deployment.Compression</AssemblyName>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <PackageId>MSFTCompression.Core</PackageId>
-    <Authors>Microsoft</Authors>
-    <Description>Core library for MSFTCompressionCab.Core.Cab</Description>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <RootNamespace>Microsoft.Deployment.Compression</RootNamespace>
+        <AssemblyName>Microsoft.Deployment.Compression</AssemblyName>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <PackageId>MSFTCompression.Core</PackageId>
+        <Authors>Microsoft</Authors>
+        <Description>Core library for MSFTCompressionCab.Core.Cab</Description>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <RepositoryUrl>https://github.com/daoluong/MSFTCompressionCab.Core.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <Version>1.0.1</Version>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <OutputPath></OutputPath>
-  </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <OutputPath></OutputPath>
+    </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <OutputPath></OutputPath>
-  </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <OutputPath></OutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Remove="Microsoft.Tools.WindowsInstallerXml\**" />
+        <Compile Remove="Tools\**" />
+        <EmbeddedResource Remove="Microsoft.Tools.WindowsInstallerXml\**" />
+        <EmbeddedResource Remove="Tools\**" />
+        <None Remove="Microsoft.Tools.WindowsInstallerXml\**" />
+        <None Remove="Tools\**" />
+    </ItemGroup>
 
 </Project>
